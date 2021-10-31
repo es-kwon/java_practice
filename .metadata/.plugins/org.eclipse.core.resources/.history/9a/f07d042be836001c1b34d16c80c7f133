@@ -1,0 +1,19 @@
+package datatype;
+
+public class DataType {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// 데이터 타입 (자료형)
+		/*
+		 * 정수 : byte, short, int, long (순서가 데이터 사이즈)
+		 * 실수 : float, double
+		 * 문자 : char
+		 * 문자열 : String
+		 * 불린 : boolean
+		 * 
+		 * */
+	}
+
+}
