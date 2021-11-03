@@ -61,11 +61,11 @@ public class InputTest {
 		// sc.next()
 		// sc.nextLine()
 
-//		System.out.print("'hellow world'를 입력해주세요! : ");
+//		System.out.print("'hello world'를 입력해주세요! : ");
 //		String str1 = sc.next();
 //		System.out.println("입력한 문장 : " + str1);
 //		
-//		System.out.print("'hellow world'를 입력해주세요! : ");
+//		System.out.print("'hello world'를 입력해주세요! : ");
 //		String str2 = sc.nextLine();
 //		System.out.println(str2);
 		
@@ -123,35 +123,41 @@ public class InputTest {
 		// a, b, c (c가 가장 크다고 가정)
 		// a + b > c
 		
-		System.out.print("첫 번째 변의 길이를 입력하세요 : ");
-		double side1 = sc.nextDouble();
+		System.out.print("세 변중 가장 긴 변의 길이를 입력하세요 : ");
+		int side1 = sc.nextInt();
 		System.out.print("두 번째 변의 길이를 입력하세요 : ");
-		double side2 = sc.nextDouble();
+		int side2 = sc.nextInt();
 		System.out.print("세 번째 변의 길이를 입력하세요 : ");
-		double side3 = sc.nextDouble();
-		String checker = ((side1 + side2) > side3) ? "삼각형을 만들 수 있습니다" : "삼각형을 만들 수 없습니다";
-		System.out.println(checker);
+		int side3 = sc.nextInt();
+		boolean isTriangle = (side2 + side3) > side1;
+		System.out.println(isTriangle ? "삼각형을 만들 수 있습니다" : "삼각형을 만들 수 없습니다");
+		
 		
 	    // Q3. 사용자에게 국어, 수학, 영어 성적 (정수)을 입력을 받아서
 	    // 세 과목의 평균이 70점이 넘는지 확인하는 프로그램
 	    
-		System.out.print("국어 성적을 입력하세요 : ");
-		double lan = sc.nextDouble();
-		System.out.print("수학 성적을 입력하세요 : ");
+		System.out.print("국어 성적을 입력해주세요 : ");
+		double kor = sc.nextDouble();
+		System.out.print("수학 성적을 입력해주세요 : ");
 		double mat = sc.nextDouble();
-		System.out.print("영어 성적을 입력하세요 : ");
+		System.out.print("영어 성적을 입력해주세요 : ");
 		double eng = sc.nextDouble();
-		double avr = (lan + mat + eng) / 3;
-		System.out.println("평균점수는 : " + avr);
-		System.out.println((avr > 70) ? "평균점수가 70점을 넘습니다" :  "평균점수가 70점을 넘지 못합니다");
+		double avg = (kor + mat + eng) / 3;
+		// kor, mat, eng가 int 값이면 분모 3을 3.0 입력하여 double로 형변환해줘야함
+		// 그렇지 않으면 int / int 연산이 되어 소수점 아래 부분 값을 잃게됨
+		boolean avgChk = avg > 70;
+		System.out.println(avgChk ? "평균이 70점을 넘습니다" : "평균이 70점을 넘지 않습니다");
+		
 		
 	     // Q4. 사용자에게 수를 하나 입력받아 
 	     // 해당 수가 홀수인지 짝수인지 판단하는 프로그램
 		
-		System.out.print("자연수를 하나 입력해주세요 : ");
+		System.out.print("자연수 하나를 입력해주세요 : ");
 		int num = sc.nextInt();
-		String ch = (num % 2 == 1) ? "홀수 입니다" : "짝수 입니다";
-		System.out.println("해당 수 는 " + ch);
+		// 홀수 (odd), 짝수 (even)
+		boolean isOdd = (num % 2) == 1;
+		boolean isEven = (num % 2) == 0;
+		System.out.println(isOdd ? "홀수 입니다" : "짝수 입니다");
 		
 	}
 
