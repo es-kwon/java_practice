@@ -1,34 +1,29 @@
 package print;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Scanner;
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
 		Scanner sc = new Scanner(System.in);
-
-		int h = sc.nextInt();
-		int m = sc.nextInt();
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		int mch = m - 45;
+		int T = Integer.parseInt(bf.readLine());
 		
-		if ((m - 45) < 0) {
-			if ((h - 1) < 0) {
-				h = 24 - 1;
-				m = 60 + m - 45;
-				System.out.println(h + " " + m);
-			}
-			else {
-				h = h - 1;
-				m = 60 + m - 45;
-				System.out.println(h + " " + m);
-			}
+		for (int i = 0; i < T; i++) {
+			String[] strs = bf.readLine().split(" ");
+			int A = Integer.parseInt(strs[0]);
+			int B = Integer.parseInt(strs[1]);
+			System.out.println(A + B);
 		}
-		else {
-			m = m - 45;
-			System.out.println(h + " " + m);
-		}
+		bw.close();
 		
 	}
 }
