@@ -95,37 +95,37 @@ public class ForTest {
 //		
 //		
 //		
-//		// Q5.
-//		// 1 ~ 100사이의 랜덤값 (Math.random())을 정답으로 지정
-//		// 사용자가 정답을 추측하는 게임
-//		// if(answer > guess) UP
-//		// else if(answer < guess) Down
-//		// else 정답!
-//		// 시도횟수도 같이 출력
-//		
-//		int answer = (int)(Math.random() * 100) + 1;
-//		int count = 0;
-//		int guess = 0;
-//		
-//		for (count = 1;;count++) {
-//			System.out.print("수를 입력 : ");
-//			guess = sc.nextInt();
-//			if (!((guess >= 0) && (guess <= 100))) {
-//				System.out.println("올바르지 않은 수, 1 ~100사이를 입력하시오");
-//				continue;
-//			}
-//			if (guess < answer) {
-//				System.out.println("UP!!");
-//			}
-//			else if (guess > answer){
-//				System.out.println("DOWN!!");
-//			}
-//			else {
-//				System.out.println("정답입니다!");
-//				System.out.printf("시도횟수는 %d회\n",count);
-//				break;
-//			}
-//		} 
+		// Q5.
+		// 1 ~ 100사이의 랜덤값 (Math.random())을 정답으로 지정
+		// 사용자가 정답을 추측하는 게임
+		// if(answer > guess) UP
+		// else if(answer < guess) Down
+		// else 정답!
+		// 시도횟수도 같이 출력
+		
+		int answer = (int)(Math.random() * 100) + 1;
+		int count = 0;
+		int guess = 0;
+		
+		for (count = 1;;count++) {
+			System.out.print("수를 입력 : ");
+			guess = sc.nextInt();
+			if (!((guess >= 0) && (guess <= 100))) {
+				System.out.println("올바르지 않은 수, 1 ~100사이를 입력하시오");
+				continue;
+			}
+			if (guess < answer) {
+				System.out.println("UP!!");
+			}
+			else if (guess > answer){
+				System.out.println("DOWN!!");
+			}
+			else {
+				System.out.println("정답입니다!");
+				System.out.printf("시도횟수는 %d회\n",count);
+				break;
+			}
+		} 
 		
 		// Q6. 김밥천국 문제
 		// 얼마 가지고 있니? 10000
