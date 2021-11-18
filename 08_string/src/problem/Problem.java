@@ -53,19 +53,17 @@ public class Problem {
 //		}
 		
 		// Q3.
-//		String str = sc.nextLine();
-//		int x = sc.nextInt();
-//		int y = sc.nextInt();
-//		String str_Substring = "";
-//		
-//		for(int i = x; i < y; i++) {
-//			str_Substring += str.charAt(i);
-//		}
-//		
-//		System.out.println(str_Substring);
+		String str = sc.nextLine();
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		String str_Substring = "";
 		
-		char a = '\uAC01';
-		System.out.println(a);
+		for(int i = x; i < y; i++) {
+			str_Substring += str.charAt(i);
+		}
+		
+		System.out.println(str_Substring);
+
 
 		
 	}

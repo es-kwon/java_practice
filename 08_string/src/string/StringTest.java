@@ -34,6 +34,11 @@ public class StringTest {
 		str5[0] = 'H'; // 가능
 //		str6.charAt(0) = 'H'; // 불가능
 		str6 = "Hello"; // 일부만 수정이 불가능해서 다시 데이터 대입
+		// String 에서 일부만 수정하고 싶다면
+		char[] str6CharArr = str6.toCharArray(); // String => char[]
+		str6CharArr[0] = 'H'; // char[] 에서 일부만 수정
+		str6 = new String(str6CharArr); // String으로 변환
+		System.out.println("str6 : " + str6);
 		
 		// 문자열 (String) 클래스 안에
 		str6 = "hhhhh";
@@ -60,7 +65,7 @@ public class StringTest {
 		System.out.println(str8);
 		
 		// "ello"
-		str8 = str6.substring(1, str6.length()); // 1 ~ 4
+		str8 = str6.substring(1, str6.length()); // 1 ~ 4, 끝까지 들고올거면 str6.length() (끝자리) 생략가능
 		System.out.println(str8);
 		
 		// 대문자 변환
