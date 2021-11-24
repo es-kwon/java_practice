@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Scanner"/>
+		<item key="selection" value="Inva"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="inva"/>
+			<item value="alreadySet"/>
+			<item value="checkString"/>
+			<item value="null"/>
+			<item value="getParameter"/>
+			<item value="parameters.parameterArr[i].getParameter()"/>
+			<item value="parameters.parameterArr.length"/>
+			<item value="setParameter"/>
+			<item value="ArrLength"/>
+			<item value="arrLength"/>
 			<item value="scanner"/>
 			<item value="y = scores;"/>
 			<item value="if(b == 0) { // 블록 (block)"/>
@@ -17,8 +27,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="824"/>
-		<item key="DIALOG_Y_ORIGIN" value="268"/>
+		<item key="DIALOG_X_ORIGIN" value="379"/>
+		<item key="DIALOG_Y_ORIGIN" value="236"/>
 		<item key="DIALOG_WIDTH" value="292"/>
 		<item key="DIALOG_HEIGHT" value="402"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

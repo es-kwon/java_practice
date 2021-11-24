@@ -6,4 +6,11 @@
     <fullyQualifiedTypeName name="function.FuncTest"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="object_array.Employee"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="overview.SmartRefrig"/>
+    <fullyQualifiedTypeName name="overview.RemoteControl"/>
+    <fullyQualifiedTypeName name="overview.SmartTV"/>
+    <fullyQualifiedTypeName name="multiple_implements.PhoneControl"/>
+    <fullyQualifiedTypeName name="problem.MovePoint"/>
+    <fullyQualifiedTypeName name="problem.GraphicControl"/>
 </qualifiedTypeNameHistroy>

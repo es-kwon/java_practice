@@ -1,19 +1,17 @@
 package aisolution;
 
-public class Custormer {
-	// 필드
+public class Customer {
+	// field
 	private int age;
 	private String gender;
 	private String location;
 	private int spentTime;
-	private static int count;
+	private GroupType groupType;
 	
-	// 생성자
-	public Custormer() {
-		
-	}
+	// constructor
+	public Customer() {}
 
-	// getter, setter
+	// setter, getter
 	public int getAge() {
 		return age;
 	}
@@ -45,29 +43,21 @@ public class Custormer {
 	public void setSpentTime(int spentTime) {
 		this.spentTime = spentTime;
 	}
-
-	public static int getCount() {
-		return count;
+	
+	public GroupType getGroupType() {
+		return groupType;
 	}
 
-	public static void setCount(int count) {
-		Custormer.count = count;
+	public void setGroupType(GroupType groupType) {
+		this.groupType = groupType;
 	}
-	
-	// parameter별 Custormer 객체 배열
-	public static Custormer[] idealArr;
-	static Custormer[] likelyArr;
-	static Custormer[] defectArr;
-	static Custormer[] othersArr;
-	
-	
-	
-	//
-//	public void checkGroup() {
-//		if(this.age >= )
-//	}
-//	
-	
-	
+
+	// toString
+	@Override
+	public String toString() {
+		return String.format
+				("age : %d, gender : %s, location : %s, spent_time : %d",
+						age, gender, location, spentTime);
+	}
 
 }
